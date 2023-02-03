@@ -91,7 +91,7 @@ video {
     font: inherit;
     vertical-align: baseline;
     list-style: none;
-    font-style: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 button {
     background-color: transparent;

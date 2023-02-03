@@ -8,13 +8,14 @@ export function ProductList({
     addToCart,
 }) {
     return (
-        <main>
+        <main className="main__container">
             {filteredWord && (
-                <h2>
-                    Resultados para: <span>{filteredWord}</span>
+                <h2 className="main__container--title">
+                    Resultados para:{" "}
+                    <span className="title__SearchWord">{filteredWord}</span>
                 </h2>
             )}
-            <ul>
+            <ul className="list__products">
                 {filteredProducts
                     ? filteredProducts
                           .filter((product) => product.name)

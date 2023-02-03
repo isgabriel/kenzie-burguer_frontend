@@ -110,7 +110,7 @@ export function App() {
     return (
         <div className="App">
             <Header search={search} resetAllProducts={resetAllProducts} />
-            <div>
+            <div className="principal__container">
                 <ProductList
                     filteredWord={filteredWord}
                     productsList={productsList}
