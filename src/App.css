@@ -1,0 +1,22 @@
+.principal__container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+@media (min-width: 769px) {
+    .principal__container {
+        align-items: center;
+    }
+}
+@media (min-width: 940px) {
+    .principal__container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        /* gap: 5px; */
+
+        margin: 0 auto;
+
+        max-width: 1230px;
+    }
+}

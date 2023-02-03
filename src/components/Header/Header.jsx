@@ -4,8 +4,8 @@ import { InputSearch } from "./InputSearch/InputSearch";
 
 export function Header({ resetAllProducts, search }) {
     return (
-        <header>
-            <nav>
+        <header className="header__container">
+            <nav className="header__navbar">
                 <Logo resetAllProducts={resetAllProducts} />
                 <InputSearch search={search} />
             </nav>

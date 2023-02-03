@@ -11,18 +11,18 @@ export function CartList({
     removeOneItem,
 }) {
     return (
-        <aside>
-            <div>
-                <h2>Carrinho de compras</h2>
+        <aside className="aside__container">
+            <div className="aside__divTitle">
+                <h2 className="aside__divTitle--title">Carrinho de compras</h2>
             </div>
             {currentSale.length === 0 ? (
-                <div>
-                    <h3>Sua sacola está vazia</h3>
-                    <p>Adicione itens</p>
+                <div className="div__emptyCart">
+                    <h3 className="descEmptyCart">Sua sacola está vazia</h3>
+                    <p className="descAddItems">Adicione itens</p>
                 </div>
             ) : (
-                <div>
-                    <ul>
+                <div className="div__cart">
+                    <ul className="cart__list">
                         {currentSale.map((product) => (
                             <CartCard
                                 product={product}
