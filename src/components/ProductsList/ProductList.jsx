@@ -1,5 +1,6 @@
 import React from "react";
 import { ProductCard } from "./ProductCard/Product";
+import { ListProductsMain, MainContainer } from "./styleProductList";
 
 export function ProductList({
     filteredWord,
@@ -8,14 +9,14 @@ export function ProductList({
     addToCart,
 }) {
     return (
-        <main className="main__container">
+        <MainContainer className="main__container">
             {filteredWord && (
                 <h2 className="main__container--title">
                     Resultados para:{" "}
                     <span className="title__SearchWord">{filteredWord}</span>
                 </h2>
             )}
-            <ul className="list__products">
+            <ListProductsMain className="list__products">
                 {filteredProducts
                     ? filteredProducts
                           .filter((product) => product.name)
@@ -45,7 +46,7 @@ export function ProductList({
                                   addToCart={addToCart}
                               />
                           ))}
-            </ul>
-        </main>
+            </ListProductsMain>
+        </MainContainer>
     );
 }

@@ -6,7 +6,9 @@ import { ProductList } from "./components/ProductsList/ProductList";
 import { CartList } from "./components/Cart/CartList/CartList";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "./App.css";
+import { GlobalReset } from "./styles/reset";
+import { GlobalStyle } from "./styles/globalStyles";
+import { PrincipalContainer } from "./styleApp";
 
 export function App() {
     const [productsList, setProductsList] = useState([]);
@@ -109,8 +111,10 @@ export function App() {
 
     return (
         <div className="App">
+            <GlobalReset />
+            <GlobalStyle />
             <Header search={search} resetAllProducts={resetAllProducts} />
-            <div className="principal__container">
+            <PrincipalContainer className="principal__container">
                 <ProductList
                     filteredWord={filteredWord}
                     productsList={productsList}
@@ -125,7 +129,7 @@ export function App() {
                     addOneItem={addOneItem}
                     removeOneItem={removeOneItem}
                 />
-            </div>
+            </PrincipalContainer>
 
             <ToastContainer />
         </div>

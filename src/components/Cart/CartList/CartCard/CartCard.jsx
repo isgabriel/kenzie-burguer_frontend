@@ -1,4 +1,10 @@
 import React from "react";
+import {
+    DivInfoCart,
+    DivManageItemsCart,
+    ListItemCart,
+    SectionDivsCart,
+} from "../../CartList/styleCart";
 
 export function CartCard({
     product,
@@ -7,7 +13,7 @@ export function CartCard({
     removeFromCart,
 }) {
     return (
-        <li className="list__itemCart">
+        <ListItemCart>
             <figure className="figure__cart">
                 <img
                     src={product.img}
@@ -15,14 +21,14 @@ export function CartCard({
                     className="image__cart"
                 />
             </figure>
-            <section className="section__divsCart">
-                <div className="divInfo__cart">
+            <SectionDivsCart className="section__divsCart">
+                <DivInfoCart className="divInfo__cart">
                     <h4 className="divInfo__cart--title">{product.name}</h4>
                     <p className="divInfo__cart--category">
                         {product.category}
                     </p>
-                </div>
-                <div className="divManageItems__cart">
+                </DivInfoCart>
+                <DivManageItemsCart className="divManageItems__cart">
                     <button
                         onClick={() => removeFromCart(product.id)}
                         className="divManageItems__cart--removeBtn"
@@ -44,8 +50,8 @@ export function CartCard({
                             +
                         </button>
                     </div>
-                </div>
-            </section>
-        </li>
+                </DivManageItemsCart>
+            </SectionDivsCart>
+        </ListItemCart>
     );
 }

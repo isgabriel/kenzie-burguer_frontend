@@ -1,4 +1,10 @@
 import React from "react";
+import { PrimaryButton } from "../../../styles/buttonPrimary";
+import {
+    DivInfosProduct,
+    FigureProduct,
+    ListItemMain,
+} from "../styleProductList";
 
 export function ProductCard({
     name,
@@ -10,21 +16,21 @@ export function ProductCard({
     product,
 }) {
     return (
-        <li className="list__item">
-            <figure className="figure__product">
+        <ListItemMain className="list__item">
+            <FigureProduct className="figure__product">
                 <img src={image} alt={name} className="image__product" />
-            </figure>
-            <div className="list__divInfos">
+            </FigureProduct>
+            <DivInfosProduct className="list__divInfos">
                 <h2 className="list__divInfos--name">{name}</h2>
                 <p className="list__divInfos--category">{category}</p>
                 <p className="list__divInfos--price">R$ {price.toFixed(2)}</p>
-                <button
+                <PrimaryButton
                     onClick={() => addToCart(product)}
                     className="primary__button addBtn"
                 >
                     Adicionar
-                </button>
-            </div>
-        </li>
+                </PrimaryButton>
+            </DivInfosProduct>
+        </ListItemMain>
     );
 }

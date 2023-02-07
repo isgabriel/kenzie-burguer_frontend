@@ -1,6 +1,0 @@
-@import url(./styles/reset.css);
-@import url(./styles/globalStyles.css);
-@import url(./App.css);
-@import url(./components/Header/header.css);
-@import url(./components/ProductsList/productList.css);
-@import url(./components/Cart/CartList/cartList.css);

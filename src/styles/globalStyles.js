@@ -1,4 +1,8 @@
-:root {
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
+
+body {
     --color-primary: #27ae60;
     --color-primary-50: #93d7af;
     --color-secondary: #eb5757;
@@ -58,3 +62,4 @@ button {
     border: solid 4px transparent;
     border-radius: 14px;
 }
+`;

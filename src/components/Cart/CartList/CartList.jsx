@@ -1,4 +1,5 @@
 import React from "react";
+import { Aside, AsideDivTitle, DivCart, DivEmptyCart } from "./styleCart";
 import { CartCard } from "./CartCard/CartCard";
 import { CartTotal } from "./CartTotal/CartTotal";
 
@@ -11,18 +12,18 @@ export function CartList({
     removeOneItem,
 }) {
     return (
-        <aside className="aside__container">
-            <div className="aside__divTitle">
-                <h2 className="aside__divTitle--title">Carrinho de compras</h2>
-            </div>
+        <Aside>
+            <AsideDivTitle>
+                <h2>Carrinho de compras</h2>
+            </AsideDivTitle>
             {currentSale.length === 0 ? (
-                <div className="div__emptyCart">
+                <DivEmptyCart>
                     <h3 className="descEmptyCart">Sua sacola está vazia</h3>
                     <p className="descAddItems">Adicione itens</p>
-                </div>
+                </DivEmptyCart>
             ) : (
-                <div className="div__cart">
-                    <ul className="cart__list">
+                <DivCart>
+                    <ul>
                         {currentSale.map((product) => (
                             <CartCard
                                 product={product}
@@ -34,8 +35,8 @@ export function CartList({
                         ))}
                     </ul>
                     <CartTotal cartTotal={cartTotal} clearCart={clearCart} />
-                </div>
+                </DivCart>
             )}
-        </aside>
+        </Aside>
     );
 }
