@@ -1,0 +1,7 @@
+import React from "react";
+import axios from "axios";
+
+export const api = axios.create({
+    baseURL: "https://hamburgueria-kenzie-json-serve.herokuapp.com/products",
+    timeout: 6000,
+});
