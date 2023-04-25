@@ -9,12 +9,16 @@ export function InputSearch({ search }) {
     function submit(event) {
         event.preventDefault();
         search(inputSrc);
-        setInputSrc("");
+        // setInputSrc("");
     }
 
     const change = (event) => setInputSrc(event.target.value);
     return (
-        <FormLogo onSubmit={submit} className="form__container">
+        <FormLogo
+            onKeyUp={submit}
+            onSubmit={submit}
+            className="form__container"
+        >
             <input
                 onChange={change}
                 name="inputSrc"

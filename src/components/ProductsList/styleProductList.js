@@ -7,6 +7,7 @@ export const MainContainer = styled.main`
     justify-content: center;
 
     h2 {
+        text-align: left;
         font-size: var(--Title-1);
         font-weight: var(--Bold);
 
