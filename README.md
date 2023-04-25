@@ -1,8 +1,8 @@
 <img src="./src/assets/logo.svg" alt="logo"/>
 
-## Kenzie Burguer / isgabriel
+## Burguer Kenzie / isgabriel
 
-<p>Kenzie Burguer é uma loja no estilo fast-food que vende sanduíches e bebidas. Os itens disponíveis são consumidos de uma API. No site é possível adicionar itens ao carrinho e visualizá-los. Além disso, é possível buscar por itens específicos, tanto por categoria quanto pelo próprio nome do item, utilizando a barra de pesquisa. É possível adicionar ou remover mais de um item do mesmo tipo ao carrinho por meio de botões de adicionar "+" e remover "-" dentro do carrinho de compras, além de conseguir remover todos os itens do carrinho de uma só vez ao clicar no botão "Remover todos".</p>
+<p>Burguer Kenzie é uma loja no estilo fast-food que vende sanduíches e bebidas. Os itens disponíveis são consumidos de uma API. No site é possível adicionar itens ao carrinho e visualizá-los. Além disso, é possível buscar por itens específicos, tanto por categoria quanto pelo próprio nome do item, utilizando a barra de pesquisa. É possível adicionar ou remover mais de um item do mesmo tipo ao carrinho por meio de botões de adicionar "+" e remover "-" dentro do carrinho de compras, além de conseguir remover todos os itens do carrinho de uma só vez ao clicar no botão "Remover todos".</p>
 
 ## Tecnologias
 
