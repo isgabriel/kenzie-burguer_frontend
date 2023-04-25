@@ -6,8 +6,14 @@ export const MainContainer = styled.main`
     align-items: center;
     justify-content: center;
 
+    .main__container--title {
+        /* width: 95vw;
+        margin-left: 16px;
+        @media only screen and (min-width: 769px) {
+            width: 100%;
+        } */
+    }
     h2 {
-        text-align: left;
         font-size: var(--Title-1);
         font-weight: var(--Bold);
 

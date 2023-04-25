@@ -12,7 +12,7 @@ export function ProductList({
         <MainContainer className="main__container">
             {filteredWord && (
                 <h2 className="main__container--title">
-                    Resultados para:{" "}
+                    Resultados para:
                     <span className="title__SearchWord">{filteredWord}</span>
                 </h2>
             )}
