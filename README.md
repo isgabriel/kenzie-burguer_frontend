@@ -1,66 +1,93 @@
-<img src="./src/assets/logo.svg" alt="logo"/>
+# Burguer Kenzie
 
-## Burguer Kenzie / isgabriel
+![GitHub repo size](https://img.shields.io/github/repo-size/isgabriel/kenzie-burguer_frontend?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/isgabriel/kenzie-burguer_frontend?style=for-the-badge)
 
-<p>Burguer Kenzie é uma loja no estilo fast-food que vende sanduíches e bebidas. Os itens disponíveis são consumidos de uma API. No site é possível adicionar itens ao carrinho e visualizá-los. Além disso, é possível buscar por itens específicos, tanto por categoria quanto pelo próprio nome do item, utilizando a barra de pesquisa. É possível adicionar ou remover mais de um item do mesmo tipo ao carrinho por meio de botões de adicionar "+" e remover "-" dentro do carrinho de compras, além de conseguir remover todos os itens do carrinho de uma só vez ao clicar no botão "Remover todos".</p>
+## Seções do projeto
 
-## Tecnologias
+-   [Descrição do Projeto](#descrição-do-projeto)
+-   [Técnicas e Tecnologias utilizadas no Projeto](#🔨-técnicas-e-tecnologias-utilizadas-no-projeto)
+-   [Pré requisitos](#💻-pré-requisitos)
+-   [Instalando o projeto](#🚀-instalando-projeto)
+-   [Usando o projeto](#☕-usando-o-projeto)
+-   [Colaboradores](#🤝-colaboradores)
 
-Aqui estão as tecnologias usadas nesse projeto:
+## ✔️ Descrição do projeto
 
--   React
+<p>Loja de comidas da categoria fast-food. Projeto consome REST API. É possível adicionar e remover itens do carrinho de compras, buscar itens por nome ou categoria.</p>
 
-## Bibliotecas
+<figure>
+  <img src="./src/readme/Home.png" alt="home page screenshot">
+  <figcaption>Página inicial contendo todos os itens da loja. O carrinho de compras está vazio.</figcaption>
+</figure>
+<p> </p>
+<br/>
 
-Aqui estão as bibliotecas usadas nesse projeto:
-
--   axios
--   react-toastify
--   styled-components
-
-## Serviço usado
-
--   Github
--   Vite
--   Vercel
-
-## Como usar
-
- <h3>1 - Ao acessar a página, você verá a página inicial</h3>
- <img src="./src/readme/Home.png" alt="home page screenshot">
-
- <h3>2 - É possível adicionar itens ao carrinho de compras</h3>
- <img src="./src/readme/Cart Full.png" alt="cart full of items">
-
- <h3>3 - Efeito ao passar o cursor por cima dos cards e do botão de adicionar :)</h3>
- <img src="./src/readme/Card Hover.png" alt="card hover effect">
-
- <h3>4 - Efeito do botão "Remover todos"</h3>
- <img src="./src/readme/Cart Remove Hover.png" alt="cart remove button hover">
-
- <h3>5 - Efeito do Input quando está selecionado</h3>
- <img src="./src/readme/Input Focus.png" alt="input focus hover">
-
- <h3>6 - É posível realizar busca por categoria ou por nome do item <3</h3>
+<figure>
  <img src="./src/readme/Search.png" alt="screenshot">
+ <figcaption>Busca de item por categoria. O carrinho de compras não está vazio.</figcaption>
+</figure>
+<br/>
 
-## Funcionalidades
+## 🔨 Técnicas e Tecnologias utilizadas no Projeto
 
-As principais funcionalidades da aplicação são:
+-   `React`
+-   `Styled Components`
+-   `Toastify`
+-   `Axios (API)`
+-   `Figma`
+-   `Github`
+-   `Git`
+-   `Vercel`
+-   `Vite`
 
--   Consumo de API para listagem dos itens disponíveis;
--   Adicionar/Remover itens ao/do carrinho;
--   Buscar itens por meio da barra de pesquisa;
--   Animações para embelezamento do site.
+Caso deseje utilizar o repositório como referência ou testá-lo na sua máquina, siga os passos ensinados nos seguintes tópicos:
 
-## Links
+1. [💻 Pré requisitos](#💻-pré-requisitos)
+2. [🚀 Instalando o projeto](#🚀-instalando-projeto)
+3. [☕ Usando o projeto](#☕-usando-o-projeto)
 
--   Deploy: https://react-entrega-template-hamburgueria-da-kenzie-isgabriel.vercel.app
--   Repository: https://github.com/isgabriel/Kenzie-Burguer
+## 💻 Pré-requisitos
 
-## Autores
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
--   <strong>Gabriel Fragoso Montenegro</strong>
-    <br/>
+-   Você instalou a versão mais recente do `<vite>`.
 
-Por favor, siga o github e junte-se a nós! Obrigado pela visita! <3
+## 🚀 Instalando projeto
+
+Para instalar o projeto, siga estas etapas:
+
+-   Instale as dependências do projeto rodando o seguinte comando no terminal:
+
+    ```
+    yarn
+    ```
+
+## ☕ Usando o projeto
+
+Para usar o projeto, siga estas etapas:
+
+-   Utilize o seguinte comando no terminal:
+
+    ```
+    yarn dev
+    ```
+
+-   Abra o link que aparecerá no terminal para acessar o ambiente de desenvolvimento do repositório.
+
+## 🤝 Colaboradores
+
+<table>
+ <tr>
+    <td align="center">
+      <a href="http://github.com/isgabriel">
+        <img src="https://avatars.githubusercontent.com/u/100328347?v=4" width="100px;" alt="Foto de Gabriel Montenegro no GitHub"/><br>
+        <sub>
+          <b>Gabriel Montenegro</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+[⬆ Voltar ao topo](#nome-do-projeto)<br>
